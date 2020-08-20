@@ -11,6 +11,7 @@ public class ClienteController {
 
     @GetMapping
     public String getCliente() throws UnknownHostException {
+		//Returning client IP Address
         return "Hello Cliente Summit From: " +  InetAddress.getLocalHost().getHostAddress();
     }
 }
